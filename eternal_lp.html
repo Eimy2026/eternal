@@ -33,7 +33,6 @@
     overflow-x: hidden;
   }
 
-  /* ── 背景装飾：フラワーオブライフ ── */
   .fol {
     position: fixed;
     opacity: 0.07;
@@ -46,7 +45,6 @@
   .fol-bl { bottom: -60px; left: -60px; width: 220px; }
   .fol-br { bottom: -60px; right: -60px; width: 220px; }
 
-  /* ── ボーダーフレーム ── */
   body::before {
     content: '';
     position: fixed;
@@ -58,7 +56,6 @@
     z-index: 100;
   }
 
-  /* ── ヒーロー ── */
   .hero {
     position: relative;
     min-height: 100vh;
@@ -149,7 +146,6 @@
     animation: bounce 2s ease-in-out infinite;
   }
 
-  /* ── セクション共通 ── */
   section {
     position: relative;
     z-index: 1;
@@ -174,7 +170,6 @@
     font-weight: 600;
   }
 
-  /* ── カード ── */
   .card {
     background: rgba(255,255,255,0.55);
     backdrop-filter: blur(12px);
@@ -187,7 +182,6 @@
   }
   .card:hover { transform: translateY(-4px); }
 
-  /* ── 自由さリスト ── */
   .free-list {
     list-style: none;
     display: grid;
@@ -207,7 +201,6 @@
     margin-top: 2px;
   }
 
-  /* ── 特徴グリッド ── */
   .feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -237,45 +230,6 @@
     line-height: 1.6;
   }
 
-  /* ── さしすせそ ── */
-  .sashisuseso {
-    background: linear-gradient(135deg, rgba(232,213,245,0.5), rgba(200,240,224,0.5));
-    border-radius: 20px;
-    padding: 32px;
-    margin-top: 24px;
-  }
-  .sashisuseso-title {
-    font-size: 1rem;
-    color: var(--text-mid);
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .sassi-row {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(180,150,210,0.2);
-  }
-  .sassi-row:last-child { border-bottom: none; }
-  .sassi-char {
-    font-family: 'Shippori Mincho', serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    background: linear-gradient(135deg, #c084d8, #7ec8e3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    width: 36px;
-    flex-shrink: 0;
-  }
-  .sassi-dots {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    letter-spacing: 0.1em;
-  }
-
-  /* ── 体験談 ── */
   .story-card {
     background: rgba(255,255,255,0.6);
     border-radius: 24px;
@@ -306,7 +260,6 @@
     line-height: 1.7;
   }
 
-  /* ── まとめ ── */
   .tagline-block {
     text-align: center;
     padding: 48px 32px;
@@ -329,7 +282,6 @@
     line-height: 1.9;
   }
 
-  /* ── 参加自由バッジ ── */
   .badge-row {
     display: flex;
     flex-wrap: wrap;
@@ -339,55 +291,7 @@
   }
   .badge {
     padding: 8px 20px;
-    border-radius: 50px;
-    font-size: 0.88rem;
-    font-weight: 700;
-    background: rgba(255,255,255,0.7);
-    border: 1.5px solid rgba(180,150,220,0.4);
-    color: var(--text-mid);
-    letter-spacing: 0.03em;
-  }
-
-  /* ── CTA Final ── */
-  .cta-section {
-    text-align: center;
-    padding: 80px 24px;
-    max-width: 720px;
-    margin: 0 auto;
-    z-index: 1;
-    position: relative;
-  }
-  .cta-text {
-    font-family: 'Shippori Mincho', serif;
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
-    color: var(--text-dark);
-    margin-bottom: 12px;
-    line-height: 1.7;
-  }
-  .cta-sub {
-    font-size: 0.95rem;
-    color: var(--text-mid);
-    margin-bottom: 36px;
-  }
-  .cta-btn-large {
-    display: inline-block;
-    padding: 22px 60px;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #d4a8f0, #a8d8f0, #f0a8c8, #a8f0c8);
-    background-size: 200% 200%;
-    animation: gradientShift 4s ease infinite;
-    color: white;
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    box-shadow: 0 10px 40px rgba(180, 140, 220, 0.4);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    border: none;
-  }
-  .cta-btn-large:hover {
-    transform: translateY(-4px) scale(1.04);
+< truncated lines 294-341 >
     box-shadow: 0 18px 50px rgba(180, 140, 220, 0.5);
   }
   .cta-note {
@@ -396,7 +300,6 @@
     color: var(--text-light);
   }
 
-  /* ── 区切り ── */
   .divider {
     text-align: center;
     font-size: 1.5rem;
@@ -405,7 +308,6 @@
     letter-spacing: 0.5em;
   }
 
-  /* ── アニメーション ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
@@ -434,7 +336,6 @@
     transform: translateY(0);
   }
 
-  /* ── レインボーライン ── */
   .rainbow-line {
     height: 3px;
     background: linear-gradient(90deg,
@@ -452,7 +353,6 @@
 </head>
 <body>
 
-<!-- フラワーオブライフ装飾（CSS SVG） -->
 <div class="fol fol-tl" aria-hidden="true">
   <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
     <circle cx="100" cy="100" r="90" stroke="url(#r1)" stroke-width="1.5"/>
@@ -546,34 +446,6 @@
       <div class="f-desc">"よくなる場所"じゃなく"自分に戻る場所"。それだけで充分。</div>
     </div>
   </div>
-
-  <!-- さしすせそワーク -->
-  <div class="sashisuseso fade-in">
-    <p class="sashisuseso-title">✨ オリジナル 褒めワーク「さしすせそ」✨<br><small>参加者だけが知れる、魔法の言葉たち💫</small></p>
-    <div class="sassi-row">
-      <span class="sassi-char">さ</span>
-      <span class="sassi-dots">◯◯ちゃんは ◯◯◯◯◯◯◯ …</span>
-    </div>
-    <div class="sassi-row">
-      <span class="sassi-char">し</span>
-      <span class="sassi-dots">◯◯ちゃんは ◯◯◯◯◯◯◯ …</span>
-    </div>
-    <div class="sassi-row">
-      <span class="sassi-char">す</span>
-      <span class="sassi-dots">◯◯ちゃんは ◯◯◯◯◯◯◯ …</span>
-    </div>
-    <div class="sassi-row">
-      <span class="sassi-char">せ</span>
-      <span class="sassi-dots">◯◯ちゃんは ◯◯◯◯◯◯◯ …</span>
-    </div>
-    <div class="sassi-row">
-      <span class="sassi-char">そ</span>
-      <span class="sassi-dots">◯◯ちゃんは ◯◯◯◯◯◯◯ …</span>
-    </div>
-    <p style="text-align:center; margin-top:20px; font-size:0.88rem; color:var(--text-light);">
-      相手に伝えたあと、必ず自分にも。名前を呼びながら💕
-    </p>
-  </div>
 </section>
 
 <!-- 体験談 -->
@@ -583,27 +455,69 @@
   <div class="rainbow-line"></div>
 
   <div class="story-card green">
-    <div class="story-emoji">🚗✨</div>
+    <div class="story-emoji">🌿💖</div>
     <p class="story-text">
-      ある人の話——車の半年点検で3日間、代車生活をしていた。<br>
-      いつも乗っている車との違いにちょっと疲れてしまったけど、
+      娘が少し気持ちが沈んでいた時のこと。<br>
+      いつもオンライン会で行っているオリジナルワーク<br>
+      「相手をまっすぐに褒める」というシンプルなワークを、<br>
+      そのまま娘にしてみました。<br>
+      アドバイスをするでもなく、<br>
+      ただ、無条件に褒める言葉を丁寧に届けていく。<br>
+      すると、少し張りつめていた娘の表情がふっと緩み、<br>
+      次第に落ち着きを取り戻していきました。
     </p>
     <div class="story-highlight">
-      💖 そのおかげで、普段の車のありがたさと<br>買ってくれた夫への感謝がじんわりと湧いてきた。
+      娘の話も聞いていないのに、<br>
+      "ただ褒める"というシンプルな関わりだけで変化していく姿を見て、<br>
+      「こんな形で愛情って伝わるんだ」と驚きました。
     </div>
+    <p class="story-text">
+      その体験をシェア会で話すと、自然とあたたかい空気になりました。<br>
+      母親の愛情が、まっすぐに届いた時間——<br>
+      あらためて、言葉の力と愛情の大きさを感じました。
+    </p>
   </div>
 
   <div class="story-card purple">
-    <div class="story-emoji">📵💡</div>
+    <div class="story-emoji">🌀💜</div>
     <p class="story-text">
-      頭で浮かんでいる言葉と話している言葉がチグハグになることがあって<br>
-      「あ、これ使いすぎてるな」って思って、AIに相談したら——
+      どうしても好きになれない人と関わらなければいけない、<br>
+      そんな状況に悩んでいました。<br>
+      関わるたびに気持ちが重くなってしまう相手で、<br>
+      できれば距離を取りたいと思うような存在でした。<br><br>
+      そんなとき、オンライン会の中で<br>
+      「嫌いな人や苦手な人こそ、"相手を褒めるワーク"がいいよ」と聞き、<br>
+      正直半信半疑のまま、試してみることにしました。<br>
+      最初は気持ちがついてこず、抵抗はありましたが（笑）
     </p>
     <div class="story-highlight">
-      🤣「スマホを一度、離れてみたら？」って言われて（笑）<br><br>
-      試しに、たった8分だけぼーっとしてみたら<br>
-      びっくりするくらい頭がスッキリ✨<br>
-      そこから「5分だけデジタルを手放す時間」という<br>オリジナルワークのアイデアが生まれた💡
+      ある日、<br>
+      その相手から、これまで一度もなかった「ごめんね」という言葉が返ってきたのです。<br><br>
+      予想していなかった変化に驚き、<br>
+      オンライン会でもその出来事が話題になりました。
+    </div>
+    <p class="story-text">
+      さらにその後、<br>
+      その人と関わる機会そのものが自然となくなっていきました。<br><br>
+      振り返ってみると、<br>
+      自分の中でその関係が整理されていったタイミングと重なっていて、<br>
+      「自分の内側が変わると、現実の関係も変わることがあるんだ」と感じた体験でした。
+    </p>
+  </div>
+
+  <div class="story-card pink">
+    <div class="story-emoji">🌸✨</div>
+    <p class="story-text">
+      オリジナルワークをしていると、<br>
+      自然と涙が溢れてきました。<br>
+      温かくて、じんわりとした感覚で、<br>
+      胸の奥がゆっくりほどけていくような時間でした。
+    </p>
+    <div class="story-highlight">
+      無条件にただ褒めるということは、<br>
+      日常の中ではなかなか触れることのない感覚で。<br><br>
+      だからこそ、この時間そのものに<br>
+      自然と感謝の気持ちが湧いてきました。
     </div>
   </div>
 </section>
@@ -658,7 +572,6 @@
 </div>
 
 <script>
-  // フェードインオブザーバー
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if (e.isIntersecting) {
