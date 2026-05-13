@@ -282,103 +282,7 @@
     line-height: 1.9;
   }
 
-  .badge-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin: 28px 0;
-  }
-  .badge {
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-size: 0.88rem;
-    font-weight: 700;
-    background: rgba(255,255,255,0.7);
-    border: 1.5px solid rgba(180,150,220,0.4);
-    color: var(--text-mid);
-    letter-spacing: 0.03em;
-  }
-
-  .cta-section {
-    text-align: center;
-    padding: 80px 24px;
-    max-width: 720px;
-    margin: 0 auto;
-    z-index: 1;
-    position: relative;
-    width: 100%;
-  }
-  .cta-text {
-    font-family: 'Shippori Mincho', serif;
-    font-size: clamp(1.2rem, 3vw, 1.6rem);
-    color: var(--text-dark);
-    margin-bottom: 12px;
-    line-height: 1.7;
-  }
-  .cta-sub {
-    font-size: 0.95rem;
-    color: var(--text-mid);
-    margin-bottom: 36px;
-  }
-  .cta-btn-large {
-    display: inline-block;
-    padding: 22px 60px;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #d4a8f0, #a8d8f0, #f0a8c8, #a8f0c8);
-    background-size: 200% 200%;
-    animation: gradientShift 4s ease infinite;
-    color: white;
-    font-size: 1.15rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-decoration: none;
-    box-shadow: 0 10px 40px rgba(180, 140, 220, 0.4);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    border: none;
-  }
-  .cta-btn-large:hover {
-    transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 18px 50px rgba(180, 140, 220, 0.5);
-  }
-  .cta-note {
-    margin-top: 20px;
-    font-size: 0.85rem;
-    color: var(--text-light);
-  }
-
-  .divider {
-    text-align: center;
-    font-size: 1.5rem;
-    opacity: 0.4;
-    margin: 8px 0;
-    letter-spacing: 0.5em;
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-  }
-  @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(8px); }
-  }
-  @keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-
-  .fade-in {
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
+< truncated lines 285-381 >
   .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
@@ -421,48 +325,115 @@
   </svg>
 </div>
 
+<!-- ヒーローセクション -->
 <div class="hero">
   <div class="hero-sparkle">✨ 🌈 ✨</div>
-  <div class="eternal-logo">∞ 自分と繋がるEternal ∞</div>
+  <div class="eternal-logo">∞ 自分と繋がるコミュニティ ∞</div>
   <h1 class="hero-title">
-    土曜の朝、ふらっと立ち寄れる<br>
+    ふらっと立ち寄れる<br>
     自分と繋がる時間。
   </h1>
   <p class="hero-sub">
-    毎週土曜 朝8時 ⏰<br>
-    参加しなくてもいい。途中でもいい。画面OFFでもいい。<br>
-    ただ、<strong>ここにいるだけで整う場所</strong>があります。
+    ただ、ここにいるだけで<br>
+    <strong>あなたの居場所</strong>があります。
   </p>
   <a href="#cta" class="cta-btn">✨ 今すぐふらっと参加する</a>
   <div class="scroll-hint">↓ スクロールして読む</div>
 </div>
 
+<!-- 自由な仕組み -->
 <section class="fade-in">
   <span class="section-emoji">🕊</span>
-  <h2 class="section-title">この集まりは、自由でいい。</h2>
+  <h2 class="section-title">この集まりは、ほどよく自由でいい。</h2>
   <div class="rainbow-line"></div>
+
   <div class="card">
     <ul class="free-list">
-      <li><span class="icon">🤭</span><span><strong>毎回参加しなくてもOK</strong><br>参加したい時に、ふらっと立ち寄れる。プレッシャーゼロの自由な集まりです。</span></li>
-      <li><span class="icon">✅</span><span><strong>途中参加・途中退出OK</strong><br>気が向いたら入って、満足したら出ていい。あなたのペースで。</span></li>
-      <li><span class="icon">😴</span><span><strong>画面OFFで参加OK</strong><br>寝起きのままでも、ベッドの中でも大丈夫。顔出し不要です。</span></li>
-      <li><span class="icon">💡</span><span><strong>主催者がいなくても成り立つ</strong><br>参加URLリンクだけ用意されていて、誰かがほぼ毎回集まっている。それだけで続いている、不思議な場所。</span></li>
+      <li>
+        <span class="icon">🤭</span>
+        <span><strong>いつ誰が参加してもwelcome</strong><br>参加したい時に、ふらっと立ち寄れる。プレッシャーゼロの自由な集まりです。</span>
+      </li>
+      <li>
+        <span class="icon">💗✨</span>
+        <span><strong>自分と繋がる</strong><br>言葉・光・◯◯のもつ力を生かしたオリジナルワーク</span>
+      </li>
+      <li>
+        <span class="icon">🌸</span>
+        <span><strong>深くて温かい場</strong><br>その心地よさを体感。</span>
+      </li>
+      <li>
+        <span class="icon">✨</span>
+        <span><strong>自分に戻る時間</strong><br>ありのままの"自分に戻る場所"。それだけで充分。</span>
+      </li>
     </ul>
   </div>
 </section>
 
+<!-- 特徴 -->
 <section class="fade-in">
   <span class="section-emoji">🌈</span>
-  <h2 class="section-title">「∞ 自分と繋がるEternal ∞」とは</h2>
+  <h2 class="section-title">「∞ 自分と繋がるコミュニティ ∞」とは</h2>
   <div class="rainbow-line"></div>
+  <p style="text-align:center; color:var(--text-mid); font-size:0.95rem; line-height:1.9; margin-bottom:32px;">
+    一人一人が、もっと深く"自分と繋がる"ために、<br>
+    2024年1月にスタートしました。<br>
+    オリジナルワークにみんなで取り組みながら<br>
+    "自分と繋がる"感覚を深めています。
+  </p>
   <div class="feature-grid">
-    <div class="feature-item"><div class="f-icon">💌</div><div class="f-label">感謝のシェア</div><div class="f-desc">24時間以内にあった感謝をシェアするだけ。小さなことでもOK。</div></div>
-    <div class="feature-item"><div class="f-icon">💖</div><div class="f-label">褒めワーク</div><div class="f-desc">オリジナルの「さしすせそ」ワークで、自分と相手をあたたかく包む。</div></div>
-    <div class="feature-item"><div class="f-icon">🌸</div><div class="f-label">深くて温かい場</div><div class="f-desc">アドバイスじゃなくて、「そうだったんだね」があるだけで整っていく。</div></div>
-    <div class="feature-item"><div class="f-icon">✨</div><div class="f-label">自分に戻る時間</div><div class="f-desc">"よくなる場所"じゃなく"自分に戻る場所"。それだけで充分。</div></div>
+    <div class="feature-item">
+      <div class="f-icon">💌</div>
+      <div class="f-label">コミュニティのオリジナルワークをシェア</div>
+      <div class="f-desc">メンバーには"自分と繋がるワーク"をシェア。このワークは自分と繋がるだけでなく、このコミュニティの人と人とを繋ぎます。</div>
+    </div>
+    <div class="feature-item">
+      <div class="f-icon">💗✨</div>
+      <div class="f-label">一人で自由にやりたい時に</div>
+      <div class="f-desc">ワークの基本は声に出して繰り返すこと。自分が心地よく感じるペースでやってみて。</div>
+    </div>
+    <div class="feature-item">
+      <div class="f-icon">🌸</div>
+      <div class="f-label">ワークシェア会でグループワーク</div>
+      <div class="f-desc">一人よりもみんなでやるとよりパワフルに。土曜日の朝にワークシェア会をご用意しています。</div>
+    </div>
+    <div class="feature-item">
+      <div class="f-icon">✨</div>
+      <div class="f-label">チャットで情報交換</div>
+      <div class="f-desc">日頃のやりとりはチャットにて。FBメッセンジャーを利用しています。</div>
+    </div>
   </div>
 </section>
 
+<!-- 土曜日ワークシェア会 -->
+<section class="fade-in">
+  <span class="section-emoji">🌅</span>
+  <h2 class="section-title">土曜日朝のワークシェア会は、こんな時間。</h2>
+  <div class="rainbow-line"></div>
+  <div class="feature-grid">
+    <div class="feature-item">
+      <div class="f-icon">💌</div>
+      <div class="f-label">感謝のシェア</div>
+      <div class="f-desc">どんな些細なことでもOK。</div>
+    </div>
+    <div class="feature-item">
+      <div class="f-icon">💗✨</div>
+      <div class="f-label">自分と繋がる</div>
+      <div class="f-desc">言葉・光・◯◯のもつ力を生かしたオリジナルワーク</div>
+    </div>
+    <div class="feature-item">
+      <div class="f-icon">🌸</div>
+      <div class="f-label">深くて温かい場</div>
+      <div class="f-desc">その心地よさを体感。</div>
+    </div>
+    <div class="feature-item">
+      <div class="f-icon">✨</div>
+      <div class="f-label">自分に戻る時間</div>
+      <div class="f-desc">ありのままの"自分に戻る場所"。それだけで充分。</div>
+    </div>
+  </div>
+</section>
+
+<!-- 体験談 -->
 <section class="fade-in">
   <span class="section-emoji">💌</span>
   <h2 class="section-title">実際の体験談</h2>
@@ -498,8 +469,8 @@
       そんな状況に悩んでいました。<br>
       関わるたびに気持ちが重くなってしまう相手で、<br>
       できれば距離を取りたいと思うような存在でした。<br><br>
-      そんなとき、オンライン会の中で<br>
-      「嫌いな人や苦手な人こそ、"相手を褒めるワーク"がいいよ」と聞き、<br>
+      そんなとき、土曜日朝の ワークシェア会で<br>
+      「嫌いな人や苦手な人がいる時、その人の名前を呼んで"自分と繋がるワーク"をやるといいよ。」と聞き、<br>
       正直半信半疑のまま、試してみることにしました。<br>
       最初は気持ちがついてこず、抵抗はありましたが（笑）
     </p>
@@ -535,24 +506,27 @@
   </div>
 </section>
 
+<!-- まとめ -->
 <section class="fade-in">
   <span class="section-emoji">🌸</span>
   <h2 class="section-title">この場所について</h2>
   <div class="rainbow-line"></div>
+
   <div class="tagline-block">
-    <p class="tagline-main">"自分をよくする場所"ではなく<br><strong>"自分に戻る場所"</strong></p>
+    <p class="tagline-main"><strong>"心地よく自分に還る場所"</strong></p>
     <p class="tagline-sub">
-      正論じゃなくていい💡<br>
-      アドバイスじゃなくていい💖<br><br>
-      ただ「そうだったんだね」って受け取ってもらえるだけで<br>
-      人は少しずつ整っていく✨<br><br>
+      がんばらなくていい。<br><br>
+      ただ受け取り合い、ワークをし合うだけで<br>
+      私たちは自然と整っていく✨<br><br>
       誰かの話を聞いて👂<br>
       自分の話をして🗣<br>
       少し気づいて💡<br>
-      少しゆるむ💖<br><br>
+      少しゆるむ💖<br>
+      そして、自分と繋がる✨<br><br>
       <strong>それだけ。でも、それが全部。</strong>
     </p>
   </div>
+
   <div class="badge-row">
     <span class="badge">😴 画面OFFでOK</span>
     <span class="badge">🤭 毎回参加しなくていい</span>
@@ -563,13 +537,16 @@
   </div>
 </section>
 
+<!-- CTA -->
 <div class="cta-section fade-in" id="cta">
   <div class="divider">∞ ∞ ∞</div>
   <br>
-  <p class="cta-text">この特別な場所を、<br>ふらっとのぞいてみませんか？</p>
+  <p class="cta-text">
+    この特別な場所を、<br>ふらっとのぞいてみませんか？
+  </p>
   <p class="cta-sub">
     参加するだけでいい。話さなくてもいい。<br>
-    あなたのペースで、自分に戻りに来て。🌈
+    あなたのペースで、本来の自分に会いに来て。🌈
   </p>
   <a href="#" class="cta-btn-large">✨ ふらっとのぞいてみる ✨</a>
   <p class="cta-note">毎週土曜 朝8時 ｜ オンライン ｜ 無料 ｜ 画面OFFでOK</p>
@@ -580,9 +557,12 @@
 <script>
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(e => {
-      if (e.isIntersecting) e.target.classList.add('visible');
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+      }
     });
   }, { threshold: 0.1 });
+
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
 </body>
