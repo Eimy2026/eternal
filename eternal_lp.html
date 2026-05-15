@@ -223,6 +223,10 @@
     font-size: 1rem;
     color: var(--text-dark);
     margin-bottom: 8px;
+    min-height: 2.4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .feature-item .f-desc {
     font-size: 0.88rem;
@@ -418,34 +422,6 @@
   <div class="scroll-hint">↓ スクロールして読む</div>
 </div>
 
-<!-- 自由な仕組み -->
-<section class="fade-in">
-  <span class="section-emoji">🕊</span>
-  <h2 class="section-title">この集まりは、ほどよく自由</h2>
-  <div class="rainbow-line"></div>
-
-  <div class="card">
-    <ul class="free-list">
-      <li>
-        <span class="icon">🤭</span>
-        <span><strong>いつ誰が参加してもwelcome<br>毎回参加しなくてもOK</strong><br>参加したい時に、ふらっと立ち寄れる。プレッシャーゼロの自由な集まりです。</span>
-      </li>
-      <li>
-        <span class="icon">✅</span>
-        <span><strong>途中参加・途中退出OK</strong><br>気が向いたら入って、満足したら出ていい。あなたのペースで。</span>
-      </li>
-      <li>
-        <span class="icon">😴</span>
-        <span><strong>画面OFFで参加OK</strong><br>寝起きのままでも、ベッドの中でも大丈夫。顔出し不要です。</span>
-      </li>
-      <li>
-        <span class="icon">💡</span>
-        <span><strong>主催者がいなくても成り立つ</strong><br>参加URLリンクだけ用意されていて、誰かがほぼ毎回集まっている。それだけで続いている、不思議な場所。</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
 <!-- 特徴 -->
 <section class="fade-in">
   <span class="section-emoji">🌈</span>
@@ -489,24 +465,51 @@
   <div class="feature-grid">
     <div class="feature-item">
       <div class="f-icon">💌</div>
-      <div class="f-label">感謝のシェア</div>
+      <div class="f-label" style="font-size:1rem;">感謝のシェア</div>
       <div class="f-desc">24時間以内にあった感謝をシェアするだけ。どんな些細なことでもOK。</div>
     </div>
     <div class="feature-item">
       <div class="f-icon">💗✨</div>
-      <div class="f-label">自分と繋がるワーク</div>
+      <div class="f-label" style="font-size:1rem;">自分と繋がるワーク</div>
       <div class="f-desc">言葉・光・◯◯のもつ力を生かしたオリジナルワークで、自分と相手をあたたかく包む。</div>
     </div>
     <div class="feature-item">
       <div class="f-icon">🌸</div>
       <div class="f-label">深くて温かい場</div>
-      <div class="f-desc">アドバイスじゃなくて、「そうだったんだね」があるだけで整っていく。その心地よさを体感。</div>
+      <div class="f-desc">「そうだったんだね」があるだけで整っていく。その心地よさを体感。</div>
     </div>
     <div class="feature-item">
       <div class="f-icon">✨</div>
-      <div class="f-label">自分に戻る時間</div>
-      <div class="f-desc">ありのままの"自分に戻る場所"。それだけで充分。</div>
+      <div class="f-label">自分に還る時間</div>
+      <div class="f-desc">ありのままの"自分に還る場所"。それだけで充分。</div>
     </div>
+  </div>
+</section>
+
+<!-- 自由な仕組み -->
+<section class="fade-in">
+  <span class="section-emoji">🕊</span>
+  <h2 class="section-title">この集まりは、ほどよく自由</h2>
+  <div class="rainbow-line"></div>
+  <div class="card">
+    <ul class="free-list">
+      <li>
+        <span class="icon">🤭</span>
+        <span><strong>いつ誰が参加してもwelcome<br>毎回参加しなくてもOK</strong><br>参加したい時に、ふらっと立ち寄れる。プレッシャーゼロの自由な集まりです。</span>
+      </li>
+      <li>
+        <span class="icon">✅</span>
+        <span><strong>途中参加・途中退出OK</strong><br>気が向いたら入って、満足したら出ていい。あなたのペースで。</span>
+      </li>
+      <li>
+        <span class="icon">😴</span>
+        <span><strong>画面OFFで参加OK</strong><br>寝起きのままでも、ベッドの中でも大丈夫。顔出し不要です。</span>
+      </li>
+      <li>
+        <span class="icon">💡</span>
+        <span><strong>主催者がいなくても成り立つ</strong><br>参加URLリンクだけ用意されていて、誰かがほぼ毎回集まっている。それだけで続いている、不思議な場所。</span>
+      </li>
+    </ul>
   </div>
 </section>
 
@@ -520,12 +523,11 @@
     <div class="story-emoji">🌿💖</div>
     <p class="story-text">
       娘が少し気持ちが沈んでいた時のこと。<br>
-      いつもオンライン会で行っているオリジナルワーク<br>
-      「相手をまっすぐに褒める」というシンプルなワークを、<br>
+      いつもワークシェア会で行っている自分と繋がるワークを<br>
       そのまま娘にしてみました。<br>
       アドバイスをするでもなく、<br>
-      ただ、無条件に褒める言葉を丁寧に届けていく。<br>
-      すると、少し張りつめていた娘の表情がふっと緩み、<br>
+      ただ、相手をまっすぐに、無条件に褒める言葉を丁寧に届けていく。<br>
+      すると、少し張り詰めていた娘の表情がすっと緩み、<br>
       次第に落ち着きを取り戻していきました。
     </p>
     <div class="story-highlight">
@@ -546,8 +548,8 @@
       そんな状況に悩んでいました。<br>
       関わるたびに気持ちが重くなってしまう相手で、<br>
       できれば距離を取りたいと思うような存在でした。<br><br>
-      そんなとき、土曜日朝の ワークシェア会で<br>
-      「嫌いな人や苦手な人がいる時、その人の名前を呼んで"自分と繋がるワーク"をやるといいよ。」と聞き、<br>
+      そんなとき、土曜日朝のワークシェア会で<br>
+      「嫌いな人や苦手な人がいる時こそ、その人の名前を呼んで"自分と繋がるワーク"をやってみるといいよ。」と聞き、<br>
       正直半信半疑のまま、試してみることにしました。<br>
       最初は気持ちがついてこず、抵抗はありましたが（笑）
     </p>
@@ -555,7 +557,7 @@
       ある日、<br>
       その相手から、これまで一度もなかった「ごめんね」という言葉が返ってきたのです。<br><br>
       予想していなかった変化に驚き、<br>
-      オンライン会でもその出来事が話題になりました。
+      ワークシェア会でもその出来事が話題になりました。
     </div>
     <p class="story-text">
       さらにその後、<br>
@@ -593,7 +595,7 @@
     <p class="tagline-main"><strong>"心地よく自分に還る場所"</strong></p>
     <p class="tagline-sub">
       がんばらなくていい。<br><br>
-      ただ受け取り合い、ワークをし合うだけで<br>
+      ただ受け取り合い、<br>ワークをし合うだけで<br>
       私たちは自然と整っていく✨<br><br>
       誰かの話を聞いて👂<br>
       自分の話をして🗣<br>
@@ -605,12 +607,15 @@
   </div>
 
   <div class="badge-row">
-    <span class="badge">😴 画面OFFでOK</span>
-    <span class="badge">🤭 毎回参加しなくていい</span>
-    <span class="badge">⏰ 土曜朝8時</span>
-    <span class="badge">✨ 途中参加・退出自由</span>
+    <span class="badge">💗✨ 自分と繋がるワーク</span>
+    <span class="badge">🗣 気づいた時に口ずさむだけ</span>
+    <span class="badge">⏰ 土曜の朝はみんなで</span>
     <span class="badge">💌 感謝のシェア</span>
-    <span class="badge">💖 褒めワーク</span>
+    <span class="badge">🤭 参加してもしなくてもOK</span>
+    <span class="badge">😴 画面OFFでOK</span>
+    <span class="badge">👂 聴いているだけでもOK</span>
+    <span class="badge">✨ 途中参加・退出自由</span>
+    <span class="badge">🌸 関わりは自分のペースで</span>
   </div>
 </section>
 
@@ -622,7 +627,6 @@
     この特別な場所を、<br>ふらっとのぞいてみませんか？
   </p>
   <p class="cta-sub" style="text-align:center;">
-    参加するだけでいい。話さなくてもいい。<br>
     あなたのペースで、本来の自分に会いに来て。🌈
   </p>
   <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAGBUbVsgJ9UOE9KWU1MU0xMSFZBQk84N0ZYVk4xWDJERy4u" class="cta-btn-large">✨ ふらっとのぞいてみる ✨</a>
